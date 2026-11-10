@@ -14,7 +14,7 @@
     <header class="header">
         <a href="index.html"><img src="/media/logo-black.svg" alt="Neuron logo" class="header__logo"></a>
         <nav>
-            <ul class="header-nav">
+            <ul class="header__nav">
                 <li> <a class="menu-link" href="/index.html">Home</a></li>
                 <li> <a class="menu-link" href="/services.html">Services</a></li>
                 <li><a class="menu-link" href="/about.html">About us</a></li>
@@ -22,20 +22,44 @@
                 <li> <a class="menu-link" href="#">Price</a></li>
                 <li> <a class="menu-link" href="/contact.html">Contact</a></li>
             </ul>
+            <i class="ri-menu-line hamburger-menu"></i>
         </nav>
     </header>
 
-<main>
-<section class="hero">
-    <div class="hero__background">
-        <div class="hero__block block">
-            <h1>We're on the road.</h1>
-            <h2 class="heading-h4">Secure and efficient enterprise digitization.</h2>
-            <a href="#" class="btn btn--light">Check our services</a>
-        </div>
-    </div>
-</section>
-</main>
+    <main>
+        <section class="hero">
+            <div class="hero__background">
+                <div class="hero__block block">
+                    <h1>We're on the road.</h1>
+                    <h2 class="heading-h4">Secure and efficient enterprise digitization.</h2>
+                    <a href="#" class="btn btn--light">Check our services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="cta__block block">
+                <div class="cta__image img-radius">
+                    <picture>
+                        <source srcset="/media/Home-img-1.avif" type="image/avif" media="(min-width: 1040)">
+                        <source srcset="/media/Home-img-1.webp" type="image/webp" media="(min-width: 1040)">
+                        <img src="/media/Home-img-1.jpg" alt="">
+                    </picture>
+                </div>
+
+                <div class="cta__content">
+                    <div class="cta__content-head">
+                        <h2>A little bit about us.</h2>
+                        <h3 class="heading-h4">Not enought for sure.</h3>
+                    </div>
+                    <p>We are a business digitalization company that will help you get what you want: to have an online
+                        presence in front of your competition. Specialists in the field of digitization of publishers
+                        and magazines.</p>
+                    <a href="#" class="btn btn--dark">More about us<i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

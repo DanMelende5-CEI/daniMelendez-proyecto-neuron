@@ -129,7 +129,7 @@ a.btn {
 }
 
 .section {
-  padding: var(--size-lg), var(--size-md);
+  padding: var(--size-lg) var(--size-md);
   max-width: var(--size-canvas);
   margin: 0 auto;
 }
@@ -147,10 +147,24 @@ a.btn {
   max-width: 5.75rem;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   gap: var(--size-md);
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 }
+
+.hamburger-menu {
+  display: none;
+
+  @media (max-width: 640px) {
+    display: inline-block;
+  }
+
+}
+
 
 /* Hero */
 .hero {
@@ -167,8 +181,11 @@ a.btn {
   min-height: 80vh;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(90deg,rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Home-banner.webp") ;
+  background: linear-gradient(90deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Home-banner.webp");
   border-radius: var(--radius-small);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__block {
@@ -177,5 +194,36 @@ a.btn {
   gap: var(--size-sm);
   align-items: start;
   width: 100%;
+
+}
+
+/* Call to Action -- CTA*/
+
+
+
+.cta__block{
+  display: flex;
+  gap: var(--size-lg);
+  align-items: center;
+  flex-wrap: wrap;
+  
+
+}
+.cta__image{
+  flex: 1 1 320px;
+
+}
+.cta__content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--size-md);
+  flex: 1 1 320px;
+
+}
+.cta__content-head{
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
 
 }
