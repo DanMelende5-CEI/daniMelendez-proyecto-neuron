@@ -86,7 +86,7 @@ a,
   font: var(--font-link);
 }
 
-a.btn {
+.btn {
   padding: var(--size-xs) var(--size-md);
   display: inline-flex;
   gap: var(--size-xs);
@@ -103,6 +103,11 @@ a.btn {
     color: var(--color-dark);
   }
 
+  &.btn--submit {
+    background-color: var(--color-brand);
+    color: var(--color-light);
+  }
+
   &:hover {
     opacity: 80%;
   }
@@ -110,6 +115,28 @@ a.btn {
   transition: opacity 300ms;
 }
 
+input, select{
+  background-color: var(--color-light);
+  border-radius: 100px;
+  padding: var(--size-sm);
+  border: 1px solid transparent;
+
+
+  &:hover{
+    opacity: 80;
+  }
+  &:focus{
+    border: 1px solid var(--color-dark);
+    outline: none;
+  }
+
+  transition: opacity 250ms, border 250ms;
+}
+
+label:not([for="acceptance"]){
+  display: none;
+
+}
 
 .menu-link {
   opacity: 50%;
@@ -201,19 +228,21 @@ a.btn {
 
 
 
-.cta__block{
+.cta__block {
   display: flex;
   gap: var(--size-lg);
   align-items: center;
   flex-wrap: wrap;
-  
+
 
 }
-.cta__image{
+
+.cta__image {
   flex: 1 1 320px;
 
 }
-.cta__content{
+
+.cta__content {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -221,9 +250,52 @@ a.btn {
   flex: 1 1 320px;
 
 }
-.cta__content-head{
+
+.cta__content-head {
   display: flex;
   flex-direction: column;
   gap: var(--size-sm);
 
+}
+
+
+
+
+/* Contact */
+
+.contact__block{
+  display: flex;
+  
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm)
+}
+
+.form__columns {
+  display: flex;
+  gap: var(--size-sm);
+  flex-wrap: wrap;
+
+  & .form__field {
+    flex: 1 1 150px;
+
+  }
+}
+
+
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-xxs);
+
+  &.form__field--acceptance {
+    flex-direction: row-reverse;
+    justify-content: start;
+
+  }
 }
