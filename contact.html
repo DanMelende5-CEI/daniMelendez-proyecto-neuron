@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset=" UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuron</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="/media/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="/media/logo-black.svg" alt="Neuron logo" class="header__logo" /></a>
+        <nav>
+            <ul class="header__nav">
+                <li><a class="menu-link" href="/index.html">Home</a></li>
+                <li><a class="menu-link" href="/services.html">Services</a></li>
+                <li><a class="menu-link" href="/about.html">About us</a></li>
+                <li><a class="menu-link" href="/news.html">News</a></li>
+                <li><a class="menu-link" href="#prices">Price</a></li>
+                <li><a class="menu-link" href="/contact.html">Contact</a></li>
+            </ul>
+            <i class="ri-menu-line hamburger-menu"></i>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero -->
+         <!--Hero About-->
+        <section class="hero--small">
+            <div class="hero--small__background hero--about__bg">
+                <div class="hero--small__block block">
+                    <h1 class="heading-h2">About</h1>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Features-->
+        <section class="section">
+            <div class="info__block block">
+                <div class="info-card">
+                    <h4 class="card-heading">
+                        <i class="ri-phone-line"></i>Call us.
+                    </h4>
+                    <p>We use the latest technology.</p>
+                </div>
+                <div class="info-card">
+                    <h4 class="card-heading">
+                        <i class="ri-barcode-box-line"></i>Easy.
+                    </h4>
+                    <p>Easy editing without restrictions..</p>
+                </div>
+                <div class="info-card">
+                    <h4 class="card-heading"><i class="ri-atom-line"></i>Editable.</h4>
+                    <p>You will be able to edit everything.</p>
+                </div>
+                <div class="info-card">
+                    <h4 class="card-heading">
+                        <i class="ri-notification-4-line"></i>Connected.
+                    </h4>
+                    <p>Always keep your community informed.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--Contact-->
+        <section class="section">
+            <div class="contact__block block">
+
+                <iframe class="contact__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.894016003482!2d-0.34734079999999995!3d39.4755747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048aeb574c4fd%3A0x4f9acd0c4bfef621!2sJardines%20del%20Real%20%2F%20Viveros!5e0!3m2!1ses!2ses!4v1794844214303!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                <div class="contact__content">
+                    <div class="contact__head">
+                        <h2> Contact with us</h2>
+                        <p>You can also check other ways to contact us on the contact page.</p>
+                    </div>
+
+                    <div>
+                        <form class="form" action="#" method="post">
+                            <div class="form__columns">
+                                <div class=" form__field">
+                                    <label for="name">Name:</label>
+                                    <input id="name" name="name" type="text" placeholder="Name">
+                                </div>
+
+                                <div class="form__field">
+                                    <label for="Surname">Surname</label>
+                                    <input type="text" name="surname" placeholder="Surname" id="Surname">
+                                </div>
+                            </div>
+
+
+                            <div class="form__field">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="email" id="email" name="email">
+                            </div>
+                            <div class="form__field">
+                                <label for="services">Services</label>
+                                <select name="services" id="services">
+                                    <option value="" selected disabled>Select the services</option>
+                                    <option value="Web development">Web development</option>
+                                    <option value="Neurohost">Neurohost</option>
+                                    <option value="Neuron Studio">Neurostudio</option>
+                                    <option value="Wordpress">Worpress</option>
+                                    <option value="UX/UI">UX/UI</option>
+                                </select>
+                            </div>
+                            <div class="form__field form__field--acceptance">
+                                <label for="acceptance">I have read and accept the privacy policy</label>
+                                <input type="checkbox" name="acceptance" id="acceptance" required>
+                            </div>
+                            <button type="submit" class="btn btn--submit">Send <i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Prices-->
+        <section id="prices"  class="section">
+            <div class="pricing__table block">
+                <div class="pricing__card">
+                    <div class="prices__card--head">
+                        <span class="heading-h3">Basic Plan</span>
+                        <span class="heading-h1">99€</span>
+                        <a href="#" class="btn btn--dark">Try it for free<i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div>
+                        <ul class="pricing__card--list">
+                            <li><i class="ri-checkbox-circle-line"></i><span>UX/UI</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>WordPress</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Customized panel</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>Neurohost access</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>Neuron Studio</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>Web development</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>App development</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>SEO/SEM</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing__card pricing__card--dark">
+                    <div class="prices__card--head">
+                        <span class="heading-h3">Pro Plan</span>
+                        <span class="heading-h1">129€</span>
+                        <a href="#" class="btn btn--light">Try it for free<i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div>
+                        <ul class="pricing__card--list">
+                            <li><i class="ri-checkbox-circle-line"></i><span>UX/UI</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>WordPress</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Customized panel</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Neurohost access</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Neuron Studio</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>Web development</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>App development</span></li>
+                            <li><i class="ri-close-circle-line icon-red"></i><span>SEO/SEM</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing__card">
+                    <div class="prices__card--head">
+                        <span class="heading-h3">Xtreme Plan</span>
+                        <span class="heading-h1">199€</span>
+                        <a href="#" class="btn btn--dark">Try it for free<i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div>
+                        <ul class="pricing__card--list">
+                            <li><i class="ri-checkbox-circle-line"></i><span>UX/UI</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>WordPress</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Customized panel</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Neurohost access</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Neuron Studio</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>Web development</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>App development</span></li>
+                            <li><i class="ri-checkbox-circle-line"></i><span>SEO/SEM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="footer section">
+        <div class="footer__block">
+            <div class="footer__top">
+                <img class="footer__logo" src="/media/logo-light.svg" alt="logo-light">
+                <div>
+                    <ul class="footer__social">
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="ri-reddit-line"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div>
+                <ul class="footer__legal">
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
