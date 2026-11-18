@@ -228,14 +228,17 @@
         <section class="section">
             <div class="contact__block block">
 
-                <iframe
+                <iframe class="contact__map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.894016003482!2d-0.34734079999999995!3d39.4755747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048aeb574c4fd%3A0x4f9acd0c4bfef621!2sJardines%20del%20Real%20%2F%20Viveros!5e0!3m2!1ses!2ses!4v1794844214303!5m2!1ses!2ses"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
                 <div class="contact__content">
-                    <h2> Contact with us</h2>
-                    <p>You can also check other ways to contact us on the contact page.</p>
+                    <div class="contact__head">
+                        <h2> Contact with us</h2>
+                        <p>You can also check other ways to contact us on the contact page.</p>
+                    </div>
+
                     <div>
                         <form class="form" action="#" method="post">
                             <div class="form__columns">
@@ -270,18 +273,90 @@
                                 <label for="acceptance">I have read and accept the privacy policy</label>
                                 <input type="checkbox" name="acceptance" id="acceptance" required>
                             </div>
-                            <button type="submit" class="btn btn--dark">Send <i class="ri-arrow-right-up-line"></i>
+                            <button type="submit" class="btn btn--submit">Send <i class="ri-arrow-right-up-line"></i>
                             </button>
                         </form>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!--Post-->
+
+        <section class="section">
+            <div class="block post__block">
+                <div class="post__heading">
+                    <h2>Latest post</h2>
+                    <a href="news.html" class="btn btn--dark">Go read all our posts<i
+                            class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <ul class="post__grid">
+                    <li class="post__card">
+                        <picture>
+                            <source srcset="" type="image/avif" media="(min-width: 1040)" />
+                            <source srcset="" type="image/webp" media="(min-width: 1040)" />
+                            <img class="img-radius" src="media/News-1.webp" alt="services image" />
+                        </picture>
+                        <h3 class="heading-h4">The Ultimate Guide to Digital Transformation for Small...</h3>
+                        <p>Embracing digital transformation is essential for small businesses seeking growth and
+                            resilience...</p>
+                        <a href="#">Read more</a>
+                    </li>
+                    <li class="post__card">
+                        <picture>
+                            <source srcset="" type="image/avif" media="(min-width: 1040)" />
+                            <source srcset="" type="image/webp" media="(min-width: 1040)" />
+                            <img class="img-radius" src="media/News-2.webp" alt="services image" />
+                        </picture>
+                        <h4>Why Cloud Solutions Are the Backbone of Modern Enterprises</h4>
+                        <p>Cloud technologies offer flexibility, security, and scalability for all types of
+                            organizations. Learn how cloud solutions...</p>
+                        <a href="#">Read more</a>
+                    </li>
+                    <li class="post__card">
+                        <picture>
+                            <source srcset="" type="image/avif" media="(min-width: 1040)" />
+                            <source srcset="" type="image/webp" media="(min-width: 1040)" />
+                            <img class="img-radius" src="media/News-3.webp" alt="services image" />
+                        </picture>
+                        <h3 class="heading-h4">Implementing workflow automation helps</h3>
+                        <p>tasks and
+                            human error. Explore key automation tools and...</p>
+                        <a href="#">Read more</a>
+                    </li>
+
+                </ul>
+                <span class="heading-h4 ">We write for you, with love from neuron.</span>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer section">
+        <div class="footer__block">
+            <div class="footer__top">
+                <img class="footer__logo" src="/media/logo-light.svg" alt="logo-light">
+                <div>
+                    <ul class="footer__social">
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="ri-reddit-line"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                    </ul>
                 </div>
 
             </div>
 
+            <div>
+                <ul class="footer__legal">
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+            </div>
+        </div>
 
-        </section>
-    </main>
+    </footer>
 </body>
 
 </html>

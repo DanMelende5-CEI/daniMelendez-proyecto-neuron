@@ -12,7 +12,7 @@
   --color-dark: #1f1f1f;
   --color-light: #f3f3f3;
   --color-brand: #4391f0;
-  --color-red: #E26868;
+  --color-red: #e26868;
 
   /* Sizes*/
   --size-lg: 4rem;
@@ -25,7 +25,7 @@
   --size-canvas: 90rem;
 
   /* Radius */
-  --radius-small: .3125rem;
+  --radius-small: 0.3125rem;
 
   /*Fonts*/
   --font-h1: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif", serif;
@@ -107,6 +107,9 @@ a,
   &.btn--submit {
     background-color: var(--color-brand);
     color: var(--color-light);
+    padding: var(--size-sm) var(--size-sm);
+    justify-content: center;
+    border: none;
   }
 
   &:hover {
@@ -116,27 +119,31 @@ a,
   transition: opacity 300ms;
 }
 
-input, select{
+input,
+select {
   background-color: var(--color-light);
   border-radius: 100px;
   padding: var(--size-sm);
   border: 1px solid transparent;
 
-
-  &:hover{
+  &:hover {
     opacity: 80;
   }
-  &:focus{
+  &:focus {
     border: 1px solid var(--color-dark);
     outline: none;
   }
 
-  transition: opacity 250ms, border 250ms;
+  transition:
+    opacity 250ms,
+    border 250ms;
 }
 
-label:not([for="acceptance"]){
+select {
+  border-right: var(--size-sm) solid var(--color-light);
+}
+label:not([for="acceptance"]) {
   display: none;
-
 }
 
 .menu-link {
@@ -323,10 +330,9 @@ label:not([for="acceptance"]){
   }
 }
 
-.icon-red{
-      color: var(--color-red);
-    }
-
+.icon-red {
+  color: var(--color-red);
+}
 
 .prices__card--head {
   display: flex;
@@ -346,14 +352,32 @@ label:not([for="acceptance"]){
   }
 }
 
-
-
 /* Contact */
 
 .contact__block {
   display: flex;
+  gap: var(--size-lg);
+  flex-wrap: wrap;
 }
 
+.contact__content {
+  display: flex;
+  gap: var(--size-md);
+  flex-direction: column;
+  flex: 1 1 320px;
+}
+
+.contact__head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-md);
+}
+
+.contact__map {
+  flex: 1 1 320px;
+  border-radius: var(--radius-small);
+  filter: grayscale(100%);
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -366,7 +390,7 @@ label:not([for="acceptance"]){
   flex-wrap: wrap;
 
   & .form__field {
-    flex: 1 1 150px;
+    flex: 1 1 110px;
   }
 }
 
@@ -379,4 +403,67 @@ label:not([for="acceptance"]){
     flex-direction: row-reverse;
     justify-content: start;
   }
+}
+
+/*Post*/
+.post__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-md);
+}
+.post__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--size-sm);
+  padding: var(--size-sm) 0;
+}
+
+.post__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
+}
+
+/*Footer*/
+
+.footer {
+  gap: var(--size-md);
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: var(--size-md);
+  gap: var(--size-md);
+}
+
+.footer__top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-sm) 0;
+}
+
+.footer__logo {
+  max-width: 8rem;
+}
+
+.footer_social {
+  display: flex;
+  gap: var(--size-sm);
+}
+
+.footer__legal {
+  display: flex;
+  gap: var(--size-sm);
+  padding: var(--size-sm) 0;
+  opacity: 80;
 }
